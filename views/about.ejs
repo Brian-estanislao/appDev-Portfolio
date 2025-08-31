@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %> | <%= siteTitle %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <section class="about-hero">
+      <h1>About Me</h1>
+      <p>Hello! I’m Brian, an aspiring IT professional and developer. I enjoy creating web applications and exploring new technologies to enhance my skills.</p>
+    </section>
+
+    <section class="about-content">
+      <div class="profile-container">
+        <img src="/images/brian.jpg" alt="Brian's Photo" class="profile-image">
+      </div>
+
+      <div class="about-text">
+        <h2>My Journey</h2>
+        <p>I started my programming journey exploring web development and database systems. Over time, I’ve built projects like student enrollment systems, e-commerce platforms, and this personal portfolio.</p>
+
+        <h2>Skills & Interests</h2>
+        <ul class="skills-list">
+          <li>Web Development (HTML, CSS, JavaScript)</li>
+          <li>C# Programming & ASP.NET Core</li>
+          <li>Database Management (MySQL)</li>
+          <li>Front-end Design & UI/UX</li>
+          <li>Problem Solving & Critical Thinking</li>
+          <li>Learning New Technologies</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

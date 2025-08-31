@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %> | <%= siteTitle %></title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <main>
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+      <h1>Contact Me</h1>
+      <p>If you'd like to reach out, send me a message below!</p>
+
+      <form action="#" method="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Buy Me a Coffee Section -->
+    <section class="coffee-container">
+      <!-- Corner Coffees -->
+      <img src="/images/coffee.gif" alt="Coffee" class="corner-coffee top-left">
+      <img src="/images/coffee2.gif" alt="Coffee" class="corner-coffee top-right">
+      <img src="/images/coffee3.gif" alt="Coffee" class="corner-coffee bottom-left">
+      <img src="/images/coffee4.gif" alt="Coffee" class="corner-coffee bottom-right">
+
+      <!-- Center Content -->
+      <div class="coffee-center">
+        <h2>Buy Me a Coffee</h2>
+        <p>If you enjoy my work, feel free to support me!</p>
+        <img src="/images/qr-code.png" alt="QR Code" class="qr-image">
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
